@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+headingDivider: 1
 style: |
   section.grid th {
     font-weight: normal;
@@ -36,16 +37,14 @@ style: |
 #### Avantages / Inconvénients
 #### Azure Function (40 minutes)
 
----
-<!-- _class: center-headings -->
 # Stateless
----
 <!-- _class: center-headings -->
+
 # :snowflake: / :fire: Start
----
 <!-- _class: center-headings -->
+
 # API Gateway
----
+<!-- _class: center-headings -->
 
 # :tomato: Lambda Specs​ 1/2
 
@@ -59,8 +58,6 @@ style: |
 |Ruby| 2.5|
 |Rust| n/a |
 
----
-
 # :tomato: Lambda Specs​ 2/2
 
 |Key|Value|
@@ -72,16 +69,13 @@ style: |
 |Compressed package size| 50MB​|
 |Uncompressed package size| 250MB|​
 
----
-
-<!-- _class: center-headings center -->
 # Azure Functions
-![bg width:800px opacity:.2](./images/azure-function.png)
-
----
 <!-- _class: center-headings -->
 ![bg width:800px opacity:.2](./images/azure-function.png)
-## Langages supportés
+
+# Langages supportés
+<!-- _class: grid center-headings -->
+![bg width:800px opacity:.2](./images/azure-function.png)
 
 | Language | Versions |
 |---|---|
@@ -91,10 +85,12 @@ style: |
 | PowerShell | 	PowerShell Core 6 |
 | Python | 3.6 & 3.7|
 
----
-<!-- _class: grid -->
+
+# Déclencheurs et liaisons 
+(passer rapidement au code)
+<!-- _class: grid center-headings center -->
 ![bg width:800px opacity:.2](./images/azure-function.png)
-## Déclencheurs et liaisons (passer rapidement au code)
+
 | Blob storage | Queue | Azure Cosmos DB |
 | --- | --- | --- |
 | Event Grid | Event Hubs | IoT Hub |
@@ -103,15 +99,13 @@ style: |
 | Service Bus | SignalR Service | Table storage |
 | Timer | Twilio | |
 
----
-<!-- _class: center-headings -->
+
 # Application Patterns
+<!-- _class: center-headings -->
 ![bg width:800px opacity:.2](./images/azure-function.png)
 
----
-
-<!-- _class: center -->
-
+#
+<!-- class: center -->
 ## Pattern #1: Function Chaining
 
 ![function chaining](./images/function-chaining.png)
@@ -120,26 +114,20 @@ style: |
 
 ![fan](./images/fan-out-fan-in.png)
 
----
-<!-- _class: center -->
+#
 ## Pattern #3: Async HTTP APIs
 
 ![async http](./images/async-http-api.png)
 
----
-<!-- _class: center -->
+#
 ## Pattern #4: Monitor
 
 ![monitor](./images/monitor.png)
 
----
-<!-- _class: center -->
+#
 ## Pattern #5: Human interaction
-
 ![approval](./images/approval.png)
 
----
-<!-- _class: center -->
-## Pattern #6: Aggregator (stateful entities)
 
+## Pattern #6: Aggregator (stateful entities)
 ![aggregator](./images/aggregator.png)
