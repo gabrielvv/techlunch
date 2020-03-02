@@ -1,6 +1,11 @@
 ---
 marp: true
+paginate: true
 style: |
+  section.grid th {
+    font-weight: normal;
+    text-align: left;
+  }
   section.center-headings h1,
   section.center-headings h2 {
       text-align: center;
@@ -34,9 +39,12 @@ style: |
 ---
 <!-- _class: center-headings -->
 # Stateless
-
-
-
+---
+<!-- _class: center-headings -->
+# :snowflake: / :fire: Start
+---
+<!-- _class: center-headings -->
+# API Gateway
 ---
 
 # :tomato: Lambda Specs​ 1/2
@@ -65,8 +73,40 @@ style: |
 |Uncompressed package size| 250MB|​
 
 ---
+
+<!-- _class: center-headings center -->
+# Azure Functions
+![bg width:800px opacity:.2](./images/azure-function.png)
+
+---
+<!-- _class: center-headings -->
+![bg width:800px opacity:.2](./images/azure-function.png)
+## Langages supportés
+
+| Language | Versions |
+|---|---|
+| JS / TS | 	Node 10 & 12|
+| F# |	.NET Core 3.1|
+| Java |	Java 8|
+| PowerShell | 	PowerShell Core 6 |
+| Python | 3.6 & 3.7|
+
+---
+<!-- _class: grid -->
+![bg width:800px opacity:.2](./images/azure-function.png)
+## Déclencheurs et liaisons (passer rapidement au code)
+| Blob storage | Queue | Azure Cosmos DB |
+| --- | --- | --- |
+| Event Grid | Event Hubs | IoT Hub |
+| HTTP and webhooks | Microsoft Graph | Mobile Apps |
+| Notification Hubs | Queue Storage | SendGrid |
+| Service Bus | SignalR Service | Table storage |
+| Timer | Twilio | |
+
+---
 <!-- _class: center-headings -->
 # Application Patterns
+![bg width:800px opacity:.2](./images/azure-function.png)
 
 ---
 
