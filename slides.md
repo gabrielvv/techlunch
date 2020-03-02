@@ -37,6 +37,8 @@ style: |
 #### Avantages / Inconvénients
 #### Azure Function (40 minutes)
 
+# :earth_americas: Ecosystème
+
 # Stateless
 <!-- _class: center-headings -->
 
@@ -45,6 +47,23 @@ style: |
 
 # API Gateway
 <!-- _class: center-headings -->
+
+# [Avantages](https://bejamas.io/blog/serverless-architectures/)
+- :money_with_wings: coût (paiement à l'usage)
+- :moneybag: pas de gestion de serveurs, pas de maintenance
+- :chart_with_upwards_trend: mise à l'échelle (automatique, ascendante ET descendante)
+- :arrows_counterclockwise: intégration avec les autres services du cloud
+- :earth_africa: le code peut s'exécuter au plus proche de l'utilisateur final (diminution de la latence)
+- :alarm_clock: temps de déploiement
+
+# [Inconvénients](https://www.cloudflare.com/learning/serverless/why-use-serverless/)
+- :lock: vendor lock-in
+- :running: performance (temps de démarrage)
+- :question: test et debug plus difficile    
+
+### à modérer en fonction 
+- du cas d'utilisation
+- des ressources et plans choisis
 
 # :tomato: Lambda Specs​ 1/2
 
@@ -131,3 +150,9 @@ style: |
 
 ## Pattern #6: Aggregator (stateful entities)
 ![aggregator](./images/aggregator.png)
+
+# Ressources
+
+- https://www.cloudflare.com/learning/serverless/what-is-serverless/
+- https://bejamas.io/blog/serverless-architectures/
+- https://serverless-stack.com/
